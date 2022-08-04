@@ -1,0 +1,35 @@
+body {
+    background-image: url("../Image/Jacinta.jpg");
+    margin: 0;
+  }
+  #title, #description {
+    text-align: center;
+    color: white;
+  }
+
+  #survey-form {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    background-color: bisque;
+    display: block;
+  }
+
+  label input {
+    width: auto;
+    display: inline-block;
+    margin: 5px;
+  }
+  
+  
+  #welcome-section {
+    height: 100vh;
+  }
+  
+  @media (min-width: 768px) {
+    body {
+      background-color: white;
+    }
+    
+  }
+  
