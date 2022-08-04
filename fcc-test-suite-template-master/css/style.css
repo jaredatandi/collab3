@@ -5,7 +5,39 @@ body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 400;
 	line-height: 1.4;
+	color: white;
 	margin: 0;
+}
+div {
+	display: block;
+}
+
+form {
+	display: block;
+	border-radius: 0.25rem;
+	background-color: rgba(27, 27, 50, 0.8);
+}
+
+label {
+	cursor: default;
+}
+
+button {
+	appearance: auto;
+	writing-mode: horizontal-tb !important;
+	text-rendering: auto;
+	letter-spacing: normal;
+	text-align: center;
+	align-items: flex-start;
+	text-shadow: none;
+	text-indent: 0px;
+	word-spacing: normal;
+	text-transform: none;
+}
+.group {
+	display: block;
+	margin: 0 auto 1.25rem auto;
+	padding: 0.25rem;
 }
 #title, #description {
 	text-align: center;
@@ -17,19 +49,21 @@ body {
 	max-width: 600px;
 	margin: auto;
 	text-align: center;
-	background-color: bisque;
 	display: block;
 }
 
-label input {
-	width: auto;
-	display: inline-block;
-	margin: 5px;
-}
-
-
 #welcome-section {
 	height: 100vh;
+}
+
+#submit-btn {
+	display: block;
+	width 100%;
+	background: green;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 0.75rem;
+	color: inherit;
 }
 
 @media (min-width: 768px) {
