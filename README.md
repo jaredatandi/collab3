@@ -1,4 +1,4 @@
-<img src="/Image/SurveyForm.png"
+<img src="./Image/SurveyForm.png"
 	alt="survey forms"
 	style="float: left; margin-right: 10px;"/>
 # Survey Form project
