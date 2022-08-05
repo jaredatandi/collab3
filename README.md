@@ -1,6 +1,5 @@
-<img src="./Image/SurveyForm.png"
-	alt="survey forms"
-	style="float: left; margin-right: 10px;"/>
+![Survey Form](/Image/SurveyForm.png "Survey Form Project")
+
 # Survey Form project
 
 This is a survey form that will capture users feedback. 
