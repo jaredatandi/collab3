@@ -9,25 +9,26 @@
 	<body>
 		<div class="container">
 			<header>
-				<h1 id="title">Survey Form</h1>
-				<p id="description">Thank you for taking your time to fill this form </p>
+				<h1 id="title" class="header">Survey Form</h1>
+				<p id="description" class="description">Thank you for taking your time to fill this form </p>
 			</header>
 			<form id="survey-form">
 				<div class="group">
 					<label id="name-label">Name</label>
-					<input  type="text" id="name" required placeholder="Enter Your Name"></input>
+					<input class="form-control" type="text" id="name" required placeholder="Enter Your Name"></input>
 				</div>
 				<div class="group">
 					<label id="email-label">Email</label>
-					<input type="email" id="email" required placeholder="Enter Your email"></input>
+					<input class="form-control" type="email" id="email" required placeholder="Enter Your email"></input>
 				</div>
 				<div class="group">
 					<label id="number-label">Age (Optional)</label>
-					<input type="number" id="number" min="0", max="100" placeholder="Age"></input>
+					<input class="form-control" type="number" id="number" min="0", max="100" placeholder="Age"></input>
 				</div>
 				<div class="group">
-					<label> What is your role? </label>
-					<select id = "dropdown">
+					<p> What is your role? </p>
+					<select class="form-control" id = "dropdown" name="role" required>
+						<option disabled selected value>Select Your role</option>
 						<option>Students</option>
 						<option>Teacher </option>
 						<option>Officer</option>
@@ -35,14 +36,36 @@
 					</select>
 				</div>
 				<div class="group">
-					<label> Are you familiar with Web Development? </label>
-					<input type ="radio" name = "name" value="sure"> <label> Definitely</input>
-					<input type ="radio" name = "name" value="maybe"> <label> Some how</input>
-					<input type ="radio" name = "name" value="no"> <label> No, I am not </input>
+					<p> Are you familiar with Web Development? </p>
+					<label>
+						<input type ="radio" name =
+							      "name" value="sure"
+								     class="input-radio"
+								     checked>Definitely
+						</input>
+					</label>
+					<label>
+						<input type ="radio"
+						       name = "name"
+						       value="maybe"
+						       class="input-radio"
+						       checked>Some how
+						</input>
+					</label>
+					<label>
+						<input type
+						       ="radio" name =
+							 "name"
+						       value="no"
+						       class="input-radio"
+						       checked> No, I am not
+						</input>
+					</label>
 				</div>
 				<div class="group">
-					<label> What is your future career? </label>
-					<select id = "dropdown">
+					<p> What is your future career? </p>
+					<select class="form-control" id = "dropdown">
+						<option disabled selected value>Select One</option>
 						<option>Developer</option>
 						<option> Project Manager </option>
 						<option> System Analyst</option>
@@ -50,17 +73,78 @@
 					</select>
 				</div>
 				<div class="group">
-					<label> What programming you want learn? </label>
-					<input type ="checkbox" name = "name" value = 'python'> <label> Python</input>
-					<input type ="checkbox" name = "name" value = 'java'> <label> Java </input>
-					<input type ="checkbox" name = "name" value = 'ruby'> <label> Ruby </input>
+					<p> What programming language do you want to learn? </p>
+					<span class="clue">(Select all that apply)</span>
+					<label>
+						<input type ="checkbox" name =
+							      "name" value = 'python'
+						       class="input-checkbox">
+						Python</input>
+					</label>
+					<label>
+						<input type ="checkbox"
+						       name = "name" value =
+							       'java'
+						       class="input-checkbox">
+						Java </input>
+					</label>
+					<label>
+						<input type
+						       ="checkbox"
+						       name = "name"
+						       value = 'ruby'
+						       class="input-checkbox">
+						Ruby </input>
+					</label>
+					<label>
+						<input type
+						       ="checkbox"
+						       name = "name"
+						       value = 'C'
+						       class="input-checkbox">
+						C </input>
+					</label>
+					<label>
+						<input type
+						       ="checkbox"
+						       name = "name"
+						       value = 'Javascript'
+						       class="input-checkbox">
+						Javascript</input>
+					</label>
+					<label>
+						<input type
+						       ="checkbox"
+						       name = "name"
+						       value = 'C++'
+						       class="input-checkbox">
+						C++ </input>
+					</label>
+					<label>
+						<input type
+						       ="checkbox"
+						       name = "name"
+						       value = 'Bash scripting'
+						       class="input-checkbox">
+						Bash Scripting </input>
+					</label>
+					<label>
+						<input type
+						       ="checkbox"
+						       name = "name"
+						       value = 'C'
+						       class="input-checkbox">
+						C </input>
+					</label>
+
+
 				</div>
 				<div class="group">
-					<label>Additionals</label>
-					<textarea>Your comments</textarea>
+					<p>Any comment or suggestions?(optional)</p>
+					<textarea id="comments" class="input-textarea" placeholder="Say Something..."></textarea>
 				</div>
-				<div class="group" id="submit-btn">
-					<input type="submit" id = "submit" value="Submit"></input>
+				<div class="group"> 
+					<button type="submit" id="submit" class="submit-button">Submit</button>
 				</div>
 			</form>
 		</div>
